@@ -1,0 +1,7 @@
+FROM ubuntu
+RUN apt update
+RUN apt install gcc -y
+RUN apt install nano -y
+COPY zadanie2labC.c . 
+RUN gcc zadanie2labC.c -o zadanie2labC
+CMD ./zadanie2labC

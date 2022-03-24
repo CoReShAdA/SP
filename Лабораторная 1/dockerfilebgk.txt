@@ -1,0 +1,5 @@
+FROM almalinux
+RUN yum update -y
+COPY bgk.sh . 
+RUN chmod ugo+x bgk.sh
+CMD ./bgk.sh
